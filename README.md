@@ -31,7 +31,7 @@ Push new branch to origin (first time pushing to branch):
 
 `$ git push origin branch-name`
 
-Standard push (for subsequent pushes):
+Standard push (for subsequent pushes):ex
 
 `$ git push`
 

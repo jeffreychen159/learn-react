@@ -1,5 +1,36 @@
+function Profile({scientist, size=70}) {
+  return (
+    <img
+    className="profile"
+    src={'https://i.imgur.com/' + scientist.imageId + 's.jpg'}
+    alt={scientist.name}
+    width={size}
+    height={size}
+    />
+    <ul>
+    <li>
+      <b>Profession: </b>
+      {scientist.profession}
+    </li>
+    <li>
+      <b>Awards: 2 </b>
+      {scientist.awards}
+    </li>
+    <li>
+      <b>Discovered: </b>
+      {scientist.discovered}
+    </li>
+    </ul>
+  )
+}
+
 export default function Gallery() {
   return (
+    <Profile
+      scientist={{name =  'Maria Skłodowska-Curie', imageId: 'szV5sdG'}}
+      size={200}
+      profession='physicist and chemist'
+      awards='(Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal)'/>
     <div>
       <h1>Notable Scientists</h1>
       <section className="profile">
