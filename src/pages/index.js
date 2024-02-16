@@ -8,11 +8,14 @@ import Bio from './qcomps/bios'
 import TodoList from './qcomps/todos'
 // import Profile from './components/profile_props'
 import Gallery from './qcomps/gallery_props'
+import List from './qcomps/list_keys_id'
+import State from './qcomps/state'
+import Form from './qcomps/stuckForm'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Profile />
+        <Form />
     </div>
   )
 }
