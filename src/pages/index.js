@@ -8,14 +8,20 @@ import Bio from './qcomps/bios'
 import TodoList from './qcomps/todos'
 // import Profile from './components/profile_props'
 import Gallery from './qcomps/gallery_props'
-import List from './qcomps/list_keys_id'
+// import List from './qcomps/list_keys_id'
 import State from './qcomps/state'
-import Form from './qcomps/stuckForm'
+// import Form from './qcomps/stuckForm'
+import Request from "./qcomps/shoppingCart"
+// import Form from "./components/updObjects"
+import Form from "./qcomps/updObjectsForm"
+// import List from "./components/artistsArr"
+import List from "./qcomps/artistsRemoveArr"
+// import BucketList from "./qcomps/arrObj"
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Form />
+        <BucketList />
     </div>
   )
 }

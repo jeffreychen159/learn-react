@@ -19,7 +19,10 @@ export default function List() {
           <li key={artist.id}>
             {artist.name}{' '}
             <button onClick={() => {
-              artists.splice(artist.id, 1)
+              // filters the array that has been deleted and returns the new array
+              setArtists(artists.filter((obj) => {
+                return obj.id != artist.id;
+              }))
             }}>
               Delete
             </button>

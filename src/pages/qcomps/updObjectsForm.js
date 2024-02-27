@@ -7,8 +7,10 @@ export default function Scoreboard() {
     likescore: 10,
   });
 
+  // use spread syntax to keep stuff that doesn't change (...player) in this case
   function handlePlusClick() {
-    player.likescore++;
+    setPlayer({...player, likescore: player.likescore + 1})
+    // player.likescore++;
   }
 
   function handleFirstNameChange(e) {
@@ -20,6 +22,7 @@ export default function Scoreboard() {
 
   function handleLastNameChange(e) {
     setPlayer({
+      ...player, 
       lastName: e.target.value
     });
   }
